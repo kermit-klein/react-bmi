@@ -6,13 +6,13 @@
 
 ### The code:
 
-A Rails application to calculate your BMI both in imperial (in, lbn) and in metric (cm, kg).<br>
+A React application to calculate your BMI both in imperial (in, lbn) and in metric (cm, kg).<br>
 It's based on two components, form that renders the inputs of the values and message, that shows the results. <br> bmihelper.js is a helper function that does the calculation.
 
 ### Dependencies:
 
 Cypress is needed to run the user tests.
-Enzyme with Jest to run the component tests.
+Enzyme,Jest,mount to run the component tests.
 
 ### Setup:<br>
 
