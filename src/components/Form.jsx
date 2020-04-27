@@ -7,8 +7,8 @@ const Form = (props) => {
   return (
     <div className="ui container">
       <h1>The Ultimate BMI Calculator</h1>
-      <form class="ui form" onSubmit={props.onSubmitHandler}>
-        <div class="field">
+      <form className="ui form" onSubmit={props.onSubmitHandler}>
+        <div className="field">
           <label htmlFor="weight">Weight</label>
           <input
             type="number"
@@ -20,7 +20,7 @@ const Form = (props) => {
             onChange={props.onChangeHandler}
           />
         </div>
-        <div class="field">
+        <div className="field">
           <label htmlFor="height">Height</label>
           <input
             type="number"
@@ -32,8 +32,8 @@ const Form = (props) => {
             onChange={props.onChangeHandler}
           />
         </div>
-        <div class="field">
-          <div class="ui checkbox">
+        <div className="field">
+          <div className="ui checkbox">
             <input
               type="checkbox"
               id="imperial"
@@ -43,7 +43,7 @@ const Form = (props) => {
             <label>Use imperial units</label>
           </div>
         </div>
-        <button id="calculate" class="ui button" type="submit">
+        <button id="calculate" className="ui button" type="submit">
           Calculate BMI
         </button>
       </form>
