@@ -35,7 +35,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div id="bmiform">
         <Form
           weight={this.state.weight}
           height={this.state.height}

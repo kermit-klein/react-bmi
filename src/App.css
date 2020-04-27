@@ -1,4 +1,4 @@
-div.container {
+#bmiform {
   position: fixed;
   top: 30%;
   left: 50%;
@@ -14,12 +14,13 @@ h1 {
 }
 
 p {
-  position: fixed;
+  font-family: "Kalam", cursive;
+  font-size: 30px;
+  font-weight: 700;
   top: 47%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 28px;
-  color: rgb(155, 235, 139);
+  color: rgb(254, 235, 97);
+  padding-top: 15px;
 }
 
 body {
