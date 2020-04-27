@@ -1,11 +1,9 @@
 export const calculateBmi = (weight, height, imperial) => {
+  let bmiValue;
   if (!imperial) {
-    const bmiValue = (weight / ((height / 100) * (height / 100))).toFixed(2);
+    bmiValue = (weight / ((height / 100) * (height / 100))).toFixed(2);
   } else {
-    const bmiValue = (
-      (weight / ((height / 100) * (height / 100))) *
-      703
-    ).toFixed(2);
+    bmiValue = ((703 * weight) / (height * height)).toFixed(2);
   }
   const bmiMessage = setBMIMessage(bmiValue);
   return [bmiValue, bmiMessage];
