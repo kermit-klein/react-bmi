@@ -26,7 +26,12 @@ const Form = (props) => {
         id="height"
         onChange={props.onChangeHandler}
       />
-      <input type="checkbox" name="imperial" onChange={props.onChangeCheck} />
+      <input
+        type="checkbox"
+        id="imperial"
+        name="imperial"
+        onChange={props.onChangeCheck}
+      />
       <label>imperial</label>
       <br />
       <button id="calculate">Calculate BMI</button>
