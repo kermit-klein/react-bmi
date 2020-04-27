@@ -1,6 +1,6 @@
 describe("BMI Calculator", () => {
   it("Calculates BMI in metric", () => {
-    cy.visit("http://localhost:3000");
+    cy.visit("/");
     cy.get("input#weight").type(90);
     cy.get("input#height").type(180);
     cy.get("button#calculate").click();
