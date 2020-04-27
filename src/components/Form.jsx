@@ -5,32 +5,49 @@ const Form = (props) => {
   const placeholder_h = props.imperial ? "Height in inch" : "Height in cm";
 
   return (
-    <form onSubmit={props.onSubmitHandler}>
-      <label htmlFor="weight">Weight</label>
-      <input
-        type="number"
-        required
-        placeholder={placeholder_w}
-        value={props.weight}
-        name="weight"
-        id="weight"
-        onChange={props.onChangeHandler}
-      />
-      <label htmlFor="height">Height</label>
-      <input
-        type="number"
-        required
-        placeholder={placeholder_h}
-        value={props.height}
-        name="height"
-        id="height"
-        onChange={props.onChangeHandler}
-      />
-      <input type="checkbox" name="imperial" onChange={props.onChangeCheck} />
-      <label>imperial</label>
-      <br />
-      <button id="calculate">Calculate BMI</button>
-    </form>
+    <div className="ui container">
+      <h1>The Ultimate BMI Calculator</h1>
+      <form class="ui form" onSubmit={props.onSubmitHandler}>
+        <div class="field">
+          <label htmlFor="weight">Weight</label>
+          <input
+            type="number"
+            required
+            placeholder={placeholder_w}
+            value={props.weight}
+            name="weight"
+            id="weight"
+            onChange={props.onChangeHandler}
+          />
+        </div>
+        <div class="field">
+          <label htmlFor="height">Height</label>
+          <input
+            type="number"
+            required
+            placeholder={placeholder_h}
+            value={props.height}
+            name="height"
+            id="height"
+            onChange={props.onChangeHandler}
+          />
+        </div>
+        <div class="field">
+          <div class="ui checkbox">
+            <input
+              type="checkbox"
+              id="imperial"
+              name="imperial"
+              onChange={props.onChangeCheck}
+            />
+            <label>Use imperial units</label>
+          </div>
+        </div>
+        <button id="calculate" class="ui button" type="submit">
+          Calculate BMI
+        </button>
+      </form>
+    </div>
   );
 };
 
