@@ -2,6 +2,8 @@
 
 ---
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0f3564be-2094-474a-a721-f93e9656575c/deploy-status)](https://app.netlify.com/sites/adoring-saha-ae9773/deploys)
+
 ## By [Ali](https://github.com/kermit-klein) and [Jenny](https://github.com/jysmys)
 
 ### The code:
